@@ -1,23 +1,30 @@
-1. Setup instructions
+<h2>1. Setup instructions</h2>
 You can download Git here: [https://git-scm.com/downloads](https://git-scm.com/downloads)
-installing it ....
+<br/>install it ....
 
-### Configuring Your Name & Email
+<h4>Configuring Your Name & Email</h4>
 In your terminal, run the following commands to identify yourself with Git:
 
-git config --global user.name "Your Name"
+<br/>
+<br/>
+<code>
+git config --global user.name "Your Name"<br/>
 git config --global user.email "your@email.com"
+</code>
 
-2. Repositories
+<h2>2. Repositories</h2>
 Create a new repository into github.com 
 
-3. Initializing a repository
+<h2>3. Initializing a repository</h2>
 To do this, create a directory, add a file there & write something on that file.
 
 you can do this from your terminal also.
 
 In the terminal, type:
+
+<code>
 mkdir Demo
+</code>
 
 This command will create a directory (or folder) named Demo.
 
@@ -25,51 +32,73 @@ Change your terminal to the Demo directory with the command:
 cd Demo
 
 Then enter:
+
+<code>
 echo "#Demo" >> README.md
+</code>
 
 This creates a file named README.md and writes #Demo in it. To check that the file was created successfully, enter:
 
 To see whats inside README.md file : 
 
+<code>
 cat README.md
+</code>
 
 Now we have a file into our working directory/folder.
 
 Now main things for Initializing a repository with the following command:
 
+<code>
 git init
+</code>
 
-4.1. Checking the status
+<h2>4.1. Checking the status</h2>
 
 While located inside the project folder in our terminal, we can type the following command to check the status of our repository:
-git status
 
-4.2. Staging files
+<code>
+git status
+</code>
+
+<h2>4.2. Staging files</h2>
 
 From the project folder, we can use the **git add** command to add our files to the staging area, which allows them to be tracked.
 
 We can add a specific file to the staging area with the following command:
 
+
+<code>
 git add file.js
+</code>
 
 To add multiple files, we can do this:
+
+<code>
 git add file.js file2.js file3.js
+</code>
 
 Instead of having to add the files individually, we can also add all the files inside the project folder to the staging area:
-
+<br/>
+<br/>
+<code>
 git add .
+</code>
 
 
-4.3. Making commits
+<h2>4.3. Making commits</h2>
 
  A **commit** is a snapshot of our code at a particular time, which we are saving to the commit history of our repository. After adding all the files that we want to track to the staging area with the `**git add`** command, we are ready to make a commit.
 
 To commit the files from the staging area, we use the following command:
-
+<br/>
+<br/>
+<code>
 git commit -m "Commit message"
+</code>
 
 
-5. Connect your GitHub repo with your computer
+<h2>5. Connect your GitHub repo with your computer</h2>
 
 Now, it's time to connect your computer to GitHub with the command:
 
@@ -82,7 +111,11 @@ it will ask your github username/password in a separate window.
 Now that we have added the remote, we can push our code (i.e., upload our README.md file) to GitHub.com.
 use the following command:
 
+<br/>
+<code>
 git push -u origin master
+</code>
+
 
 Now, go to https://github.com/<your_username>/Demo you will see your changes there.
 
