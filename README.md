@@ -9,7 +9,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your@email.com"
 
 2. Repositories
-Create a new repository  into github.com 
+Create a new repository into github.com 
 
 3. Initializing a repository
 To do this, create a directory, add a file there & write something on that file.
@@ -30,6 +30,7 @@ echo "#Demo" >> README.md
 This creates a file named README.md and writes #Demo in it. To check that the file was created successfully, enter:
 
 To see whats inside README.md file : 
+
 cat README.md
 
 Now we have a file into our working directory/folder.
@@ -38,12 +39,12 @@ Now main things for Initializing a repository with the following command:
 
 git init
 
-## 4.1. Checking the status
+4.1. Checking the status
 
 While located inside the project folder in our terminal, we can type the following command to check the status of our repository:
 git status
 
-## 4.2. Staging files
+4.2. Staging files
 
 From the project folder, we can use the **git add** command to add our files to the staging area, which allows them to be tracked.
 
@@ -55,9 +56,11 @@ To add multiple files, we can do this:
 git add file.js file2.js file3.js
 
 Instead of having to add the files individually, we can also add all the files inside the project folder to the staging area:
+
 git add .
 
-## 4.3. Making commits
+
+4.3. Making commits
 
  A **commit** is a snapshot of our code at a particular time, which we are saving to the commit history of our repository. After adding all the files that we want to track to the staging area with the `**git add`** command, we are ready to make a commit.
 
@@ -82,6 +85,7 @@ use the following command:
 git push -u origin master
 
 Now, go to https://github.com/<your_username>/Demo you will see your changes there.
+
 
 
 
