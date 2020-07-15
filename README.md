@@ -9,6 +9,7 @@ In your terminal, run the following commands to identify yourself with Git:
 <br/>
 <code>
 git config --global user.name "Your Name"<br/>
+
 git config --global user.email "your@email.com"
 </code>
 
@@ -25,17 +26,21 @@ In the terminal, type:
 <code>
 mkdir Demo
 </code>
-
+<br/>
 This command will create a directory (or folder) named Demo.
 
 Change your terminal to the Demo directory with the command:
+
+<code>
 cd Demo
+</code>
 
 Then enter:
 
 <code>
 echo "#Demo" >> README.md
 </code>
+<br/>
 
 This creates a file named README.md and writes #Demo in it. To check that the file was created successfully, enter:
 
@@ -44,7 +49,7 @@ To see whats inside README.md file :
 <code>
 cat README.md
 </code>
-
+<br/>
 Now we have a file into our working directory/folder.
 
 Now main things for Initializing a repository with the following command:
@@ -71,13 +76,13 @@ We can add a specific file to the staging area with the following command:
 <code>
 git add file.js
 </code>
-
+<br/>
 To add multiple files, we can do this:
 
 <code>
 git add file.js file2.js file3.js
 </code>
-
+<br/>
 Instead of having to add the files individually, we can also add all the files inside the project folder to the staging area:
 <br/>
 <br/>
@@ -102,8 +107,9 @@ git commit -m "Commit message"
 
 Now, it's time to connect your computer to GitHub with the command:
 
+<code>
 git remote add origin https://github.com/imon0077/GitTutorial.git
-
+</code>
 
 it will ask your github username/password in a separate window.
 
@@ -111,11 +117,12 @@ it will ask your github username/password in a separate window.
 Now that we have added the remote, we can push our code (i.e., upload our README.md file) to GitHub.com.
 use the following command:
 
-<br/>
+
 <code>
 git push -u origin master
 </code>
 
+<br/>
 
 Now, go to https://github.com/<your_username>/Demo you will see your changes there.
 
